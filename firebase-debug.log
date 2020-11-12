@@ -1,0 +1,27 @@
+[debug] [2020-11-12T11:02:59.145Z] ----------------------------------------------------------------------
+[debug] [2020-11-12T11:02:59.147Z] Command:       /home/khan/.nvm/versions/node/v14.8.0/bin/node /home/khan/.nvm/versions/node/v14.8.0/bin/firebase deploy
+[debug] [2020-11-12T11:02:59.147Z] CLI Version:   8.10.0
+[debug] [2020-11-12T11:02:59.147Z] Platform:      linux
+[debug] [2020-11-12T11:02:59.148Z] Node Version:  v14.8.0
+[debug] [2020-11-12T11:02:59.148Z] Time:          Thu Nov 12 2020 16:32:59 GMT+0530 (India Standard Time)
+[debug] [2020-11-12T11:02:59.148Z] ----------------------------------------------------------------------
+[debug] [2020-11-12T11:02:59.148Z] 
+[debug] [2020-11-12T11:02:59.153Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-12T11:02:59.153Z] > authorizing via signed-in user
+[debug] [2020-11-12T11:02:59.153Z] [iam] checking project weather-app-178a5 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-12T11:02:59.156Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-12T11:02:59.156Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-12T11:02:59.538Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Thu, 12 Nov 2020 11:02:59 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-12T11:02:59.550Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/weather-app-178a5:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-12T11:03:01.168Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 12 Nov 2020 11:03:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1282","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-12T11:03:01.173Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/weather-app-178a5  
+ 
+[debug] [2020-11-12T11:03:02.089Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 12 Nov 2020 11:03:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'weather-app-178a5'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-12T11:03:02.093Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/weather-app-178a5/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}

@@ -32,9 +32,35 @@ main {
   margin: 0 0 75px;
 }
 
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__optionLineOne {
+  font-size: 20px;
+  font-weight: 800;
+}
+.header__optionLineTwo {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.header__optionLineThree {
+  font-size: 20px;
+  font-weight: 800;
+}
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
 .search-box .search-bar {
   display: block;
-  width: 100%;
+  width: 30%;
   padding: 15px;
   appearance: none;
   background: none;
